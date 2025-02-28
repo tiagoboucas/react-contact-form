@@ -1,0 +1,104 @@
+.emails-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .emails-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem;
+  }
+  
+  .loading,
+  .no-emails,
+  .error {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .error {
+    color: #ff4d4d;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .emails-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .emails-table th,
+  .emails-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    color: #262626;
+    text-align: left;
+  }
+  
+  .emails-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .emails-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .emails-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  @media (max-width: 768px) {
+    .emails-table {
+      display: block;
+      width: 100%;
+    }
+  
+    .emails-table thead {
+      display: none;
+    }
+  
+    .emails-table tbody {
+      display: block;
+      width: 100%;
+    }
+  
+    .emails-table tr {
+      display: block;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .emails-table td {
+      display: block;
+      text-align: right;
+      padding: 10px;
+      color: #262626 !important;
+      border: none;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+    }
+  
+    .emails-table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: bold;
+      color: #333;
+    }
+  }
